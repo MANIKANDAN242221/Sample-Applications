@@ -1,0 +1,23 @@
+name: Demo Test Pipeline
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Testing Stage
+        run: |
+          echo "Running Test Case 1"
+          echo "Test Case 1 Passed"
+
+          echo "Running Test Case 2"
+          echo "Test Case 2 Passed"
+
+          echo "Running Test Case 3"
+          echo "Test Case 3 Passed"
+
+      - name: Success
+        run: echo "✅ All Tests Passed"
