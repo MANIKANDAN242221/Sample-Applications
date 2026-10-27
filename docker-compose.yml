@@ -16,7 +16,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./taskflow-frontend
       dockerfile: Dockerfile
     container_name: app-frontend
     restart: unless-stopped
@@ -27,7 +27,7 @@ services:
 
   backend:
     build:
-      context: ./backend
+      context: ./taskflow-backend
       dockerfile: Dockerfile
     container_name: app-backend
     restart: unless-stopped
